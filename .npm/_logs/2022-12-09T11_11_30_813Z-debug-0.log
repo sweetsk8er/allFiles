@@ -1,0 +1,544 @@
+0 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'sloc' ]
+1 info using npm@8.5.1
+2 info using node@v12.22.9
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 3ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:/home/sweetsk8er/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 1ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 12ms
+18 timing npm:load:configload Completed in 12ms
+19 timing npm:load:setTitle Completed in 0ms
+20 timing config:load:flatten Completed in 3ms
+21 timing npm:load:display Completed in 4ms
+22 verbose logfile /home/sweetsk8er/.npm/_logs/2022-12-09T11_11_30_813Z-debug-0.log
+23 timing npm:load:logFile Completed in 5ms
+24 timing npm:load:timers Completed in 0ms
+25 timing npm:load:configScope Completed in 0ms
+26 timing npm:load Completed in 21ms
+27 timing arborist:ctor Completed in 1ms
+28 silly logfile start cleaning logs, removing 1 files
+29 timing idealTree:init Completed in 6ms
+30 timing idealTree:userRequests Completed in 3ms
+31 silly idealTree buildDeps
+32 silly fetch manifest sloc@*
+33 http fetch GET 200 https://registry.npmjs.org/sloc 929ms (cache miss)
+34 silly placeDep ROOT sloc@0.2.1 OK for:  want: *
+35 silly fetch manifest async@~2.1.4
+36 silly fetch manifest cli-table@^0.3.1
+37 silly fetch manifest commander@~2.9.0
+38 silly fetch manifest readdirp@^2.1.0
+39 http fetch GET 200 https://registry.npmjs.org/async 80ms (cache miss)
+40 http fetch GET 200 https://registry.npmjs.org/readdirp 100ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/cli-table 103ms (cache miss)
+42 http fetch GET 200 https://registry.npmjs.org/commander 115ms (cache miss)
+43 timing idealTree:#root Completed in 1058ms
+44 silly placeDep node_modules/sloc async@2.1.5 OK for: sloc@0.2.1 want: ~2.1.4
+45 silly placeDep node_modules/sloc cli-table@0.3.11 OK for: sloc@0.2.1 want: ^0.3.1
+46 silly placeDep node_modules/sloc commander@2.9.0 OK for: sloc@0.2.1 want: ~2.9.0
+47 silly placeDep node_modules/sloc readdirp@2.2.1 OK for: sloc@0.2.1 want: ^2.1.0
+48 silly fetch manifest lodash@^4.14.0
+49 silly fetch manifest colors@1.0.3
+50 silly fetch manifest graceful-readlink@>= 1.0.0
+51 silly fetch manifest graceful-fs@^4.1.11
+52 silly fetch manifest micromatch@^3.1.10
+53 silly fetch manifest readable-stream@^2.0.2
+54 http fetch GET 200 https://registry.npmjs.org/graceful-fs 58ms (cache miss)
+55 http fetch GET 200 https://registry.npmjs.org/colors 75ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/lodash 80ms (cache miss)
+57 http fetch GET 200 https://registry.npmjs.org/graceful-readlink 84ms (cache miss)
+58 http fetch GET 200 https://registry.npmjs.org/micromatch 101ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/readable-stream 102ms (cache miss)
+60 timing idealTree:node_modules/sloc Completed in 119ms
+61 silly placeDep node_modules/sloc lodash@4.17.21 OK for: async@2.1.5 want: ^4.14.0
+62 timing idealTree:node_modules/sloc/node_modules/async Completed in 2ms
+63 silly placeDep node_modules/sloc colors@1.0.3 OK for: cli-table@0.3.11 want: 1.0.3
+64 timing idealTree:node_modules/sloc/node_modules/cli-table Completed in 1ms
+65 timing idealTree:node_modules/sloc/node_modules/colors Completed in 0ms
+66 silly placeDep node_modules/sloc graceful-readlink@1.0.1 OK for: commander@2.9.0 want: >= 1.0.0
+67 timing idealTree:node_modules/sloc/node_modules/commander Completed in 3ms
+68 timing idealTree:node_modules/sloc/node_modules/graceful-readlink Completed in 0ms
+69 timing idealTree:node_modules/sloc/node_modules/lodash Completed in 0ms
+70 silly placeDep node_modules/sloc graceful-fs@4.2.10 OK for: readdirp@2.2.1 want: ^4.1.11
+71 silly placeDep node_modules/sloc micromatch@3.1.10 OK for: readdirp@2.2.1 want: ^3.1.10
+72 silly placeDep node_modules/sloc readable-stream@2.3.7 OK for: readdirp@2.2.1 want: ^2.0.2
+73 silly fetch manifest arr-diff@^4.0.0
+74 silly fetch manifest array-unique@^0.3.2
+75 silly fetch manifest braces@^2.3.1
+76 silly fetch manifest define-property@^2.0.2
+77 silly fetch manifest extend-shallow@^3.0.2
+78 silly fetch manifest extglob@^2.0.4
+79 silly fetch manifest fragment-cache@^0.2.1
+80 silly fetch manifest kind-of@^6.0.2
+81 silly fetch manifest nanomatch@^1.2.9
+82 silly fetch manifest object.pick@^1.3.0
+83 silly fetch manifest regex-not@^1.0.0
+84 silly fetch manifest snapdragon@^0.8.1
+85 silly fetch manifest to-regex@^3.0.2
+86 silly fetch manifest core-util-is@~1.0.0
+87 silly fetch manifest inherits@~2.0.3
+88 silly fetch manifest isarray@~1.0.0
+89 silly fetch manifest process-nextick-args@~2.0.0
+90 silly fetch manifest safe-buffer@~5.1.1
+91 silly fetch manifest string_decoder@~1.1.1
+92 silly fetch manifest util-deprecate@~1.0.1
+93 http fetch GET 200 https://registry.npmjs.org/define-property 93ms (cache miss)
+94 http fetch GET 200 https://registry.npmjs.org/extglob 93ms (cache miss)
+95 http fetch GET 200 https://registry.npmjs.org/array-unique 98ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/braces 101ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/extend-shallow 101ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/nanomatch 97ms (cache miss)
+99 http fetch GET 200 https://registry.npmjs.org/arr-diff 105ms (cache miss)
+100 http fetch GET 200 https://registry.npmjs.org/core-util-is 95ms (cache miss)
+101 http fetch GET 200 https://registry.npmjs.org/inherits 95ms (cache miss)
+102 http fetch GET 200 https://registry.npmjs.org/snapdragon 100ms (cache miss)
+103 http fetch GET 200 https://registry.npmjs.org/to-regex 100ms (cache miss)
+104 http fetch GET 200 https://registry.npmjs.org/isarray 98ms (cache miss)
+105 http fetch GET 200 https://registry.npmjs.org/fragment-cache 107ms (cache miss)
+106 http fetch GET 200 https://registry.npmjs.org/regex-not 102ms (cache miss)
+107 http fetch GET 200 https://registry.npmjs.org/string_decoder 99ms (cache miss)
+108 http fetch GET 200 https://registry.npmjs.org/safe-buffer 100ms (cache miss)
+109 http fetch GET 200 https://registry.npmjs.org/util-deprecate 100ms (cache miss)
+110 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 103ms (cache miss)
+111 http fetch GET 200 https://registry.npmjs.org/object.pick 130ms (cache miss)
+112 http fetch GET 200 https://registry.npmjs.org/kind-of 534ms (cache miss)
+113 timing idealTree:node_modules/sloc/node_modules/readdirp Completed in 546ms
+114 timing idealTree:node_modules/sloc/node_modules/graceful-fs Completed in 0ms
+115 silly placeDep node_modules/sloc arr-diff@4.0.0 OK for: micromatch@3.1.10 want: ^4.0.0
+116 silly placeDep node_modules/sloc array-unique@0.3.2 OK for: micromatch@3.1.10 want: ^0.3.2
+117 silly placeDep node_modules/sloc braces@2.3.2 OK for: micromatch@3.1.10 want: ^2.3.1
+118 silly placeDep node_modules/sloc define-property@2.0.2 OK for: micromatch@3.1.10 want: ^2.0.2
+119 silly placeDep node_modules/sloc extend-shallow@3.0.2 OK for: micromatch@3.1.10 want: ^3.0.2
+120 silly placeDep node_modules/sloc extglob@2.0.4 OK for: micromatch@3.1.10 want: ^2.0.4
+121 silly placeDep node_modules/sloc fragment-cache@0.2.1 OK for: micromatch@3.1.10 want: ^0.2.1
+122 silly placeDep node_modules/sloc kind-of@6.0.3 OK for: micromatch@3.1.10 want: ^6.0.2
+123 silly placeDep node_modules/sloc nanomatch@1.2.13 OK for: micromatch@3.1.10 want: ^1.2.9
+124 silly placeDep node_modules/sloc object.pick@1.3.0 OK for: micromatch@3.1.10 want: ^1.3.0
+125 silly placeDep node_modules/sloc regex-not@1.0.2 OK for: micromatch@3.1.10 want: ^1.0.0
+126 silly placeDep node_modules/sloc snapdragon@0.8.2 OK for: micromatch@3.1.10 want: ^0.8.1
+127 silly placeDep node_modules/sloc to-regex@3.0.2 OK for: micromatch@3.1.10 want: ^3.0.2
+128 silly fetch manifest arr-flatten@^1.1.0
+129 silly fetch manifest extend-shallow@^2.0.1
+130 silly fetch manifest fill-range@^4.0.0
+131 silly fetch manifest isobject@^3.0.1
+132 silly fetch manifest repeat-element@^1.1.2
+133 silly fetch manifest snapdragon-node@^2.0.1
+134 silly fetch manifest split-string@^3.0.2
+135 silly fetch manifest is-descriptor@^1.0.2
+136 silly fetch manifest assign-symbols@^1.0.0
+137 silly fetch manifest is-extendable@^1.0.1
+138 silly fetch manifest define-property@^1.0.0
+139 silly fetch manifest expand-brackets@^2.1.4
+140 silly fetch manifest map-cache@^0.2.2
+141 silly fetch manifest is-windows@^1.0.2
+142 silly fetch manifest safe-regex@^1.1.0
+143 silly fetch manifest base@^0.11.1
+144 silly fetch manifest debug@^2.2.0
+145 silly fetch manifest define-property@^0.2.5
+146 silly fetch manifest source-map@^0.5.6
+147 silly fetch manifest source-map-resolve@^0.5.0
+148 silly fetch manifest use@^3.1.0
+149 http fetch GET 200 https://registry.npmjs.org/repeat-element 66ms (cache miss)
+150 http fetch GET 200 https://registry.npmjs.org/map-cache 73ms (cache miss)
+151 http fetch GET 200 https://registry.npmjs.org/arr-flatten 82ms (cache miss)
+152 http fetch GET 200 https://registry.npmjs.org/is-windows 75ms (cache miss)
+153 http fetch GET 200 https://registry.npmjs.org/is-extendable 78ms (cache miss)
+154 http fetch GET 200 https://registry.npmjs.org/base 77ms (cache miss)
+155 http fetch GET 200 https://registry.npmjs.org/isobject 93ms (cache miss)
+156 http fetch GET 200 https://registry.npmjs.org/fill-range 94ms (cache miss)
+157 http fetch GET 200 https://registry.npmjs.org/split-string 94ms (cache miss)
+158 http fetch GET 200 https://registry.npmjs.org/expand-brackets 92ms (cache miss)
+159 http fetch GET 200 https://registry.npmjs.org/snapdragon-node 98ms (cache miss)
+160 http fetch GET 200 https://registry.npmjs.org/safe-regex 93ms (cache miss)
+161 http fetch GET 200 https://registry.npmjs.org/is-descriptor 97ms (cache miss)
+162 http fetch GET 200 https://registry.npmjs.org/source-map 92ms (cache miss)
+163 http fetch GET 200 https://registry.npmjs.org/assign-symbols 101ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/source-map-resolve 94ms (cache miss)
+165 http fetch GET 200 https://registry.npmjs.org/use 94ms (cache miss)
+166 http fetch GET 200 https://registry.npmjs.org/debug 97ms (cache miss)
+167 timing idealTree:node_modules/sloc/node_modules/micromatch Completed in 137ms
+168 timing idealTree:node_modules/sloc/node_modules/arr-diff Completed in 0ms
+169 timing idealTree:node_modules/sloc/node_modules/array-unique Completed in 0ms
+170 silly placeDep node_modules/sloc arr-flatten@1.1.0 OK for: braces@2.3.2 want: ^1.1.0
+171 silly placeDep node_modules/sloc/node_modules/braces extend-shallow@2.0.1 OK for: braces@2.3.2 want: ^2.0.1
+172 silly placeDep node_modules/sloc fill-range@4.0.0 OK for: braces@2.3.2 want: ^4.0.0
+173 silly placeDep node_modules/sloc isobject@3.0.1 OK for: braces@2.3.2 want: ^3.0.1
+174 silly placeDep node_modules/sloc repeat-element@1.1.4 OK for: braces@2.3.2 want: ^1.1.2
+175 silly placeDep node_modules/sloc snapdragon-node@2.1.1 OK for: braces@2.3.2 want: ^2.0.1
+176 silly placeDep node_modules/sloc split-string@3.1.0 OK for: braces@2.3.2 want: ^3.0.2
+177 silly fetch manifest is-extendable@^0.1.0
+178 silly fetch manifest is-number@^3.0.0
+179 silly fetch manifest repeat-string@^1.6.1
+180 silly fetch manifest to-regex-range@^2.1.0
+181 silly fetch manifest snapdragon-util@^3.0.1
+182 http fetch GET 200 https://registry.npmjs.org/is-number 40ms (cache miss)
+183 http fetch GET 200 https://registry.npmjs.org/to-regex-range 39ms (cache miss)
+184 http fetch GET 200 https://registry.npmjs.org/repeat-string 49ms (cache miss)
+185 http fetch GET 200 https://registry.npmjs.org/snapdragon-util 91ms (cache miss)
+186 timing idealTree:node_modules/sloc/node_modules/braces Completed in 112ms
+187 timing idealTree:node_modules/sloc/node_modules/arr-flatten Completed in 0ms
+188 silly placeDep node_modules/sloc is-descriptor@1.0.2 OK for: define-property@2.0.2 want: ^1.0.2
+189 silly fetch manifest is-accessor-descriptor@^1.0.0
+190 silly fetch manifest is-data-descriptor@^1.0.0
+191 http fetch GET 200 https://registry.npmjs.org/is-data-descriptor 28ms (cache miss)
+192 http fetch GET 200 https://registry.npmjs.org/is-accessor-descriptor 38ms (cache miss)
+193 timing idealTree:node_modules/sloc/node_modules/define-property Completed in 41ms
+194 silly placeDep node_modules/sloc assign-symbols@1.0.0 OK for: extend-shallow@3.0.2 want: ^1.0.0
+195 silly placeDep node_modules/sloc is-extendable@1.0.1 OK for: extend-shallow@3.0.2 want: ^1.0.1
+196 silly fetch manifest is-plain-object@^2.0.4
+197 http fetch GET 200 https://registry.npmjs.org/is-plain-object 32ms (cache miss)
+198 timing idealTree:node_modules/sloc/node_modules/extend-shallow Completed in 36ms
+199 timing idealTree:node_modules/sloc/node_modules/assign-symbols Completed in 0ms
+200 silly placeDep node_modules/sloc/node_modules/extglob define-property@1.0.0 OK for: extglob@2.0.4 want: ^1.0.0
+201 silly placeDep node_modules/sloc expand-brackets@2.1.4 OK for: extglob@2.0.4 want: ^2.1.4
+202 silly placeDep node_modules/sloc/node_modules/extglob extend-shallow@2.0.1 OK for: extglob@2.0.4 want: ^2.0.1
+203 silly fetch manifest debug@^2.3.3
+204 silly fetch manifest posix-character-classes@^0.1.0
+205 http fetch GET 200 https://registry.npmjs.org/posix-character-classes 43ms (cache miss)
+206 timing idealTree:node_modules/sloc/node_modules/extglob Completed in 48ms
+207 silly placeDep node_modules/sloc debug@2.6.9 OK for: expand-brackets@2.1.4 want: ^2.3.3
+208 silly placeDep node_modules/sloc/node_modules/expand-brackets define-property@0.2.5 OK for: expand-brackets@2.1.4 want: ^0.2.5
+209 silly placeDep node_modules/sloc/node_modules/expand-brackets extend-shallow@2.0.1 OK for: expand-brackets@2.1.4 want: ^2.0.1
+210 silly placeDep node_modules/sloc posix-character-classes@0.1.1 OK for: expand-brackets@2.1.4 want: ^0.1.0
+211 silly fetch manifest ms@2.0.0
+212 silly fetch manifest is-descriptor@^0.1.0
+213 http fetch GET 200 https://registry.npmjs.org/ms 48ms (cache miss)
+214 timing idealTree:node_modules/sloc/node_modules/expand-brackets Completed in 53ms
+215 silly placeDep node_modules/sloc ms@2.0.0 OK for: debug@2.6.9 want: 2.0.0
+216 timing idealTree:node_modules/sloc/node_modules/debug Completed in 1ms
+217 silly placeDep node_modules/sloc/node_modules/fill-range extend-shallow@2.0.1 OK for: fill-range@4.0.0 want: ^2.0.1
+218 silly placeDep node_modules/sloc is-number@3.0.0 OK for: fill-range@4.0.0 want: ^3.0.0
+219 silly placeDep node_modules/sloc repeat-string@1.6.1 OK for: fill-range@4.0.0 want: ^1.6.1
+220 silly placeDep node_modules/sloc to-regex-range@2.1.1 OK for: fill-range@4.0.0 want: ^2.1.0
+221 silly fetch manifest kind-of@^3.0.2
+222 timing idealTree:node_modules/sloc/node_modules/fill-range Completed in 6ms
+223 silly placeDep node_modules/sloc map-cache@0.2.2 OK for: fragment-cache@0.2.1 want: ^0.2.2
+224 timing idealTree:node_modules/sloc/node_modules/fragment-cache Completed in 1ms
+225 silly placeDep node_modules/sloc is-accessor-descriptor@1.0.0 OK for: is-descriptor@1.0.2 want: ^1.0.0
+226 silly placeDep node_modules/sloc is-data-descriptor@1.0.0 OK for: is-descriptor@1.0.2 want: ^1.0.0
+227 timing idealTree:node_modules/sloc/node_modules/is-descriptor Completed in 2ms
+228 timing idealTree:node_modules/sloc/node_modules/is-accessor-descriptor Completed in 0ms
+229 timing idealTree:node_modules/sloc/node_modules/is-data-descriptor Completed in 0ms
+230 silly placeDep node_modules/sloc is-plain-object@2.0.4 OK for: is-extendable@1.0.1 want: ^2.0.4
+231 timing idealTree:node_modules/sloc/node_modules/is-extendable Completed in 4ms
+232 silly placeDep node_modules/sloc/node_modules/is-number kind-of@3.2.2 OK for: is-number@3.0.0 want: ^3.0.2
+233 silly fetch manifest is-buffer@^1.1.5
+234 http fetch GET 200 https://registry.npmjs.org/is-buffer 39ms (cache miss)
+235 timing idealTree:node_modules/sloc/node_modules/is-number Completed in 43ms
+236 timing idealTree:node_modules/sloc/node_modules/is-plain-object Completed in 0ms
+237 timing idealTree:node_modules/sloc/node_modules/isobject Completed in 0ms
+238 timing idealTree:node_modules/sloc/node_modules/kind-of Completed in 0ms
+239 timing idealTree:node_modules/sloc/node_modules/map-cache Completed in 0ms
+240 timing idealTree:node_modules/sloc/node_modules/ms Completed in 0ms
+241 silly placeDep node_modules/sloc is-windows@1.0.2 OK for: nanomatch@1.2.13 want: ^1.0.2
+242 timing idealTree:node_modules/sloc/node_modules/nanomatch Completed in 1ms
+243 timing idealTree:node_modules/sloc/node_modules/is-windows Completed in 0ms
+244 timing idealTree:node_modules/sloc/node_modules/object.pick Completed in 0ms
+245 timing idealTree:node_modules/sloc/node_modules/posix-character-classes Completed in 0ms
+246 silly placeDep node_modules/sloc core-util-is@1.0.3 OK for: readable-stream@2.3.7 want: ~1.0.0
+247 silly placeDep node_modules/sloc inherits@2.0.4 OK for: readable-stream@2.3.7 want: ~2.0.3
+248 silly placeDep node_modules/sloc isarray@1.0.0 OK for: readable-stream@2.3.7 want: ~1.0.0
+249 silly placeDep node_modules/sloc process-nextick-args@2.0.1 OK for: readable-stream@2.3.7 want: ~2.0.0
+250 silly placeDep node_modules/sloc safe-buffer@5.1.2 OK for: readable-stream@2.3.7 want: ~5.1.1
+251 silly placeDep node_modules/sloc string_decoder@1.1.1 OK for: readable-stream@2.3.7 want: ~1.1.1
+252 silly placeDep node_modules/sloc util-deprecate@1.0.2 OK for: readable-stream@2.3.7 want: ~1.0.1
+253 timing idealTree:node_modules/sloc/node_modules/readable-stream Completed in 8ms
+254 timing idealTree:node_modules/sloc/node_modules/core-util-is Completed in 0ms
+255 timing idealTree:node_modules/sloc/node_modules/inherits Completed in 1ms
+256 timing idealTree:node_modules/sloc/node_modules/isarray Completed in 0ms
+257 timing idealTree:node_modules/sloc/node_modules/process-nextick-args Completed in 0ms
+258 silly placeDep node_modules/sloc safe-regex@1.1.0 OK for: regex-not@1.0.2 want: ^1.1.0
+259 silly fetch manifest ret@~0.1.10
+260 http fetch GET 200 https://registry.npmjs.org/ret 39ms (cache miss)
+261 timing idealTree:node_modules/sloc/node_modules/regex-not Completed in 43ms
+262 timing idealTree:node_modules/sloc/node_modules/repeat-element Completed in 0ms
+263 timing idealTree:node_modules/sloc/node_modules/repeat-string Completed in 0ms
+264 timing idealTree:node_modules/sloc/node_modules/safe-buffer Completed in 0ms
+265 silly placeDep node_modules/sloc ret@0.1.15 OK for: safe-regex@1.1.0 want: ~0.1.10
+266 timing idealTree:node_modules/sloc/node_modules/safe-regex Completed in 1ms
+267 timing idealTree:node_modules/sloc/node_modules/ret Completed in 0ms
+268 silly placeDep node_modules/sloc base@0.11.2 OK for: snapdragon@0.8.2 want: ^0.11.1
+269 silly placeDep node_modules/sloc/node_modules/snapdragon define-property@0.2.5 OK for: snapdragon@0.8.2 want: ^0.2.5
+270 silly placeDep node_modules/sloc/node_modules/snapdragon extend-shallow@2.0.1 OK for: snapdragon@0.8.2 want: ^2.0.1
+271 silly placeDep node_modules/sloc source-map@0.5.7 OK for: snapdragon@0.8.2 want: ^0.5.6
+272 silly placeDep node_modules/sloc source-map-resolve@0.5.3 OK for: snapdragon@0.8.2 want: ^0.5.0
+273 silly placeDep node_modules/sloc use@3.1.1 OK for: snapdragon@0.8.2 want: ^3.1.0
+274 silly fetch manifest cache-base@^1.0.1
+275 silly fetch manifest class-utils@^0.3.5
+276 silly fetch manifest component-emitter@^1.2.1
+277 silly fetch manifest mixin-deep@^1.2.0
+278 silly fetch manifest pascalcase@^0.1.1
+279 silly fetch manifest atob@^2.1.2
+280 silly fetch manifest decode-uri-component@^0.2.0
+281 silly fetch manifest resolve-url@^0.2.1
+282 silly fetch manifest source-map-url@^0.4.0
+283 silly fetch manifest urix@^0.1.0
+284 http fetch GET 200 https://registry.npmjs.org/source-map-url 38ms (cache miss)
+285 http fetch GET 200 https://registry.npmjs.org/class-utils 44ms (cache miss)
+286 http fetch GET 200 https://registry.npmjs.org/component-emitter 45ms (cache miss)
+287 http fetch GET 200 https://registry.npmjs.org/atob 50ms (cache miss)
+288 http fetch GET 200 https://registry.npmjs.org/cache-base 55ms (cache miss)
+289 http fetch GET 200 https://registry.npmjs.org/urix 49ms (cache miss)
+290 http fetch GET 200 https://registry.npmjs.org/resolve-url 54ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/decode-uri-component 59ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/mixin-deep 63ms (cache miss)
+293 http fetch GET 200 https://registry.npmjs.org/pascalcase 63ms (cache miss)
+294 timing idealTree:node_modules/sloc/node_modules/snapdragon Completed in 74ms
+295 silly placeDep node_modules/sloc cache-base@1.0.1 OK for: base@0.11.2 want: ^1.0.1
+296 silly placeDep node_modules/sloc class-utils@0.3.6 OK for: base@0.11.2 want: ^0.3.5
+297 silly placeDep node_modules/sloc component-emitter@1.3.0 OK for: base@0.11.2 want: ^1.2.1
+298 silly placeDep node_modules/sloc/node_modules/base define-property@1.0.0 OK for: base@0.11.2 want: ^1.0.0
+299 silly placeDep node_modules/sloc mixin-deep@1.3.2 OK for: base@0.11.2 want: ^1.2.0
+300 silly placeDep node_modules/sloc pascalcase@0.1.1 OK for: base@0.11.2 want: ^0.1.1
+301 silly fetch manifest collection-visit@^1.0.0
+302 silly fetch manifest get-value@^2.0.6
+303 silly fetch manifest has-value@^1.0.0
+304 silly fetch manifest set-value@^2.0.0
+305 silly fetch manifest to-object-path@^0.3.0
+306 silly fetch manifest union-value@^1.0.0
+307 silly fetch manifest unset-value@^1.0.0
+308 silly fetch manifest arr-union@^3.1.0
+309 silly fetch manifest static-extend@^0.1.1
+310 silly fetch manifest for-in@^1.0.2
+311 http fetch GET 200 https://registry.npmjs.org/set-value 45ms (cache miss)
+312 http fetch GET 200 https://registry.npmjs.org/unset-value 44ms (cache miss)
+313 http fetch GET 200 https://registry.npmjs.org/has-value 68ms (cache miss)
+314 http fetch GET 200 https://registry.npmjs.org/to-object-path 67ms (cache miss)
+315 http fetch GET 200 https://registry.npmjs.org/union-value 67ms (cache miss)
+316 http fetch GET 200 https://registry.npmjs.org/collection-visit 70ms (cache miss)
+317 http fetch GET 200 https://registry.npmjs.org/static-extend 67ms (cache miss)
+318 http fetch GET 200 https://registry.npmjs.org/arr-union 68ms (cache miss)
+319 http fetch GET 200 https://registry.npmjs.org/get-value 71ms (cache miss)
+320 http fetch GET 200 https://registry.npmjs.org/for-in 68ms (cache miss)
+321 timing idealTree:node_modules/sloc/node_modules/base Completed in 79ms
+322 silly placeDep node_modules/sloc collection-visit@1.0.0 OK for: cache-base@1.0.1 want: ^1.0.0
+323 silly placeDep node_modules/sloc get-value@2.0.6 OK for: cache-base@1.0.1 want: ^2.0.6
+324 silly placeDep node_modules/sloc has-value@1.0.0 OK for: cache-base@1.0.1 want: ^1.0.0
+325 silly placeDep node_modules/sloc set-value@2.0.1 OK for: cache-base@1.0.1 want: ^2.0.0
+326 silly placeDep node_modules/sloc to-object-path@0.3.0 OK for: cache-base@1.0.1 want: ^0.3.0
+327 silly placeDep node_modules/sloc union-value@1.0.1 OK for: cache-base@1.0.1 want: ^1.0.0
+328 silly placeDep node_modules/sloc unset-value@1.0.0 OK for: cache-base@1.0.1 want: ^1.0.0
+329 silly fetch manifest map-visit@^1.0.0
+330 silly fetch manifest object-visit@^1.0.0
+331 silly fetch manifest has-values@^1.0.0
+332 silly fetch manifest is-extendable@^0.1.1
+333 silly fetch manifest has-value@^0.3.1
+334 http fetch GET 200 https://registry.npmjs.org/object-visit 39ms (cache miss)
+335 http fetch GET 200 https://registry.npmjs.org/map-visit 49ms (cache miss)
+336 http fetch GET 200 https://registry.npmjs.org/has-values 47ms (cache miss)
+337 timing idealTree:node_modules/sloc/node_modules/cache-base Completed in 60ms
+338 silly placeDep node_modules/sloc arr-union@3.1.0 OK for: class-utils@0.3.6 want: ^3.1.0
+339 silly placeDep node_modules/sloc/node_modules/class-utils define-property@0.2.5 OK for: class-utils@0.3.6 want: ^0.2.5
+340 silly placeDep node_modules/sloc static-extend@0.1.2 OK for: class-utils@0.3.6 want: ^0.1.1
+341 silly fetch manifest object-copy@^0.1.0
+342 http fetch GET 200 https://registry.npmjs.org/object-copy 54ms (cache miss)
+343 timing idealTree:node_modules/sloc/node_modules/class-utils Completed in 58ms
+344 timing idealTree:node_modules/sloc/node_modules/arr-union Completed in 0ms
+345 silly placeDep node_modules/sloc map-visit@1.0.0 OK for: collection-visit@1.0.0 want: ^1.0.0
+346 silly placeDep node_modules/sloc object-visit@1.0.1 OK for: collection-visit@1.0.0 want: ^1.0.0
+347 timing idealTree:node_modules/sloc/node_modules/collection-visit Completed in 2ms
+348 timing idealTree:node_modules/sloc/node_modules/component-emitter Completed in 0ms
+349 timing idealTree:node_modules/sloc/node_modules/get-value Completed in 0ms
+350 silly placeDep node_modules/sloc has-values@1.0.0 OK for: has-value@1.0.0 want: ^1.0.0
+351 silly fetch manifest kind-of@^4.0.0
+352 timing idealTree:node_modules/sloc/node_modules/has-value Completed in 2ms
+353 silly placeDep node_modules/sloc/node_modules/has-values kind-of@4.0.0 OK for: has-values@1.0.0 want: ^4.0.0
+354 timing idealTree:node_modules/sloc/node_modules/has-values Completed in 1ms
+355 timing idealTree:node_modules/sloc/node_modules/map-visit Completed in 0ms
+356 silly placeDep node_modules/sloc for-in@1.0.2 OK for: mixin-deep@1.3.2 want: ^1.0.2
+357 timing idealTree:node_modules/sloc/node_modules/mixin-deep Completed in 1ms
+358 timing idealTree:node_modules/sloc/node_modules/for-in Completed in 0ms
+359 timing idealTree:node_modules/sloc/node_modules/object-visit Completed in 0ms
+360 timing idealTree:node_modules/sloc/node_modules/pascalcase Completed in 0ms
+361 silly placeDep node_modules/sloc/node_modules/set-value extend-shallow@2.0.1 OK for: set-value@2.0.1 want: ^2.0.1
+362 silly placeDep node_modules/sloc/node_modules/set-value is-extendable@0.1.1 OK for: set-value@2.0.1 want: ^0.1.1
+363 timing idealTree:node_modules/sloc/node_modules/set-value Completed in 2ms
+364 silly placeDep node_modules/sloc/node_modules/snapdragon-node define-property@1.0.0 OK for: snapdragon-node@2.1.1 want: ^1.0.0
+365 silly placeDep node_modules/sloc snapdragon-util@3.0.1 OK for: snapdragon-node@2.1.1 want: ^3.0.1
+366 silly fetch manifest kind-of@^3.2.0
+367 timing idealTree:node_modules/sloc/node_modules/snapdragon-node Completed in 3ms
+368 silly placeDep node_modules/sloc/node_modules/snapdragon-util kind-of@3.2.2 OK for: snapdragon-util@3.0.1 want: ^3.2.0
+369 timing idealTree:node_modules/sloc/node_modules/snapdragon-util Completed in 1ms
+370 timing idealTree:node_modules/sloc/node_modules/source-map Completed in 0ms
+371 silly placeDep node_modules/sloc atob@2.1.2 OK for: source-map-resolve@0.5.3 want: ^2.1.2
+372 silly placeDep node_modules/sloc decode-uri-component@0.2.2 OK for: source-map-resolve@0.5.3 want: ^0.2.0
+373 silly placeDep node_modules/sloc resolve-url@0.2.1 OK for: source-map-resolve@0.5.3 want: ^0.2.1
+374 silly placeDep node_modules/sloc source-map-url@0.4.1 OK for: source-map-resolve@0.5.3 want: ^0.4.0
+375 silly placeDep node_modules/sloc urix@0.1.0 OK for: source-map-resolve@0.5.3 want: ^0.1.0
+376 timing idealTree:node_modules/sloc/node_modules/source-map-resolve Completed in 4ms
+377 timing idealTree:node_modules/sloc/node_modules/atob Completed in 0ms
+378 timing idealTree:node_modules/sloc/node_modules/decode-uri-component Completed in 0ms
+379 timing idealTree:node_modules/sloc/node_modules/resolve-url Completed in 0ms
+380 timing idealTree:node_modules/sloc/node_modules/source-map-url Completed in 0ms
+381 timing idealTree:node_modules/sloc/node_modules/split-string Completed in 0ms
+382 silly placeDep node_modules/sloc/node_modules/static-extend define-property@0.2.5 OK for: static-extend@0.1.2 want: ^0.2.5
+383 silly placeDep node_modules/sloc object-copy@0.1.0 OK for: static-extend@0.1.2 want: ^0.1.0
+384 silly fetch manifest copy-descriptor@^0.1.0
+385 silly fetch manifest kind-of@^3.0.3
+386 http fetch GET 200 https://registry.npmjs.org/copy-descriptor 41ms (cache miss)
+387 timing idealTree:node_modules/sloc/node_modules/static-extend Completed in 43ms
+388 silly placeDep node_modules/sloc copy-descriptor@0.1.1 OK for: object-copy@0.1.0 want: ^0.1.0
+389 silly placeDep node_modules/sloc/node_modules/object-copy define-property@0.2.5 OK for: object-copy@0.1.0 want: ^0.2.5
+390 silly placeDep node_modules/sloc/node_modules/object-copy kind-of@3.2.2 OK for: object-copy@0.1.0 want: ^3.0.3
+391 timing idealTree:node_modules/sloc/node_modules/object-copy Completed in 3ms
+392 timing idealTree:node_modules/sloc/node_modules/copy-descriptor Completed in 0ms
+393 timing idealTree:node_modules/sloc/node_modules/string_decoder Completed in 0ms
+394 silly placeDep node_modules/sloc/node_modules/to-object-path kind-of@3.2.2 OK for: to-object-path@0.3.0 want: ^3.0.2
+395 timing idealTree:node_modules/sloc/node_modules/to-object-path Completed in 1ms
+396 timing idealTree:node_modules/sloc/node_modules/to-regex Completed in 0ms
+397 timing idealTree:node_modules/sloc/node_modules/to-regex-range Completed in 0ms
+398 silly placeDep node_modules/sloc/node_modules/union-value is-extendable@0.1.1 OK for: union-value@1.0.1 want: ^0.1.1
+399 timing idealTree:node_modules/sloc/node_modules/union-value Completed in 1ms
+400 silly placeDep node_modules/sloc/node_modules/unset-value has-value@0.3.1 OK for: unset-value@1.0.0 want: ^0.3.1
+401 silly fetch manifest has-values@^0.1.4
+402 silly fetch manifest isobject@^2.0.0
+403 timing idealTree:node_modules/sloc/node_modules/unset-value Completed in 2ms
+404 timing idealTree:node_modules/sloc/node_modules/urix Completed in 0ms
+405 timing idealTree:node_modules/sloc/node_modules/use Completed in 0ms
+406 timing idealTree:node_modules/sloc/node_modules/util-deprecate Completed in 0ms
+407 timing idealTree:node_modules/sloc/node_modules/base/node_modules/define-property Completed in 0ms
+408 silly placeDep node_modules/sloc/node_modules/braces is-extendable@0.1.1 OK for: extend-shallow@2.0.1 want: ^0.1.0
+409 timing idealTree:node_modules/sloc/node_modules/braces/node_modules/extend-shallow Completed in 1ms
+410 timing idealTree:node_modules/sloc/node_modules/braces/node_modules/is-extendable Completed in 0ms
+411 silly placeDep node_modules/sloc/node_modules/class-utils is-descriptor@0.1.6 OK for: define-property@0.2.5 want: ^0.1.0
+412 silly fetch manifest is-accessor-descriptor@^0.1.6
+413 silly fetch manifest is-data-descriptor@^0.1.4
+414 silly fetch manifest kind-of@^5.0.0
+415 timing idealTree:node_modules/sloc/node_modules/class-utils/node_modules/define-property Completed in 3ms
+416 silly placeDep node_modules/sloc/node_modules/class-utils is-accessor-descriptor@0.1.6 OK for: is-descriptor@0.1.6 want: ^0.1.6
+417 silly placeDep node_modules/sloc/node_modules/class-utils is-data-descriptor@0.1.4 OK for: is-descriptor@0.1.6 want: ^0.1.4
+418 silly placeDep node_modules/sloc/node_modules/class-utils kind-of@5.1.0 OK for: is-descriptor@0.1.6 want: ^5.0.0
+419 timing idealTree:node_modules/sloc/node_modules/class-utils/node_modules/is-descriptor Completed in 4ms
+420 silly placeDep node_modules/sloc/node_modules/class-utils/node_modules/is-accessor-descriptor kind-of@3.2.2 OK for: is-accessor-descriptor@0.1.6 want: ^3.0.2
+421 timing idealTree:node_modules/sloc/node_modules/class-utils/node_modules/is-accessor-descriptor Completed in 1ms
+422 silly placeDep node_modules/sloc/node_modules/class-utils/node_modules/is-data-descriptor kind-of@3.2.2 OK for: is-data-descriptor@0.1.4 want: ^3.0.2
+423 timing idealTree:node_modules/sloc/node_modules/class-utils/node_modules/is-data-descriptor Completed in 1ms
+424 timing idealTree:node_modules/sloc/node_modules/class-utils/node_modules/kind-of Completed in 0ms
+425 silly placeDep node_modules/sloc/node_modules/expand-brackets is-descriptor@0.1.6 OK for: define-property@0.2.5 want: ^0.1.0
+426 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/define-property Completed in 1ms
+427 silly placeDep node_modules/sloc/node_modules/expand-brackets is-extendable@0.1.1 OK for: extend-shallow@2.0.1 want: ^0.1.0
+428 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/extend-shallow Completed in 1ms
+429 silly placeDep node_modules/sloc/node_modules/expand-brackets is-accessor-descriptor@0.1.6 OK for: is-descriptor@0.1.6 want: ^0.1.6
+430 silly placeDep node_modules/sloc/node_modules/expand-brackets is-data-descriptor@0.1.4 OK for: is-descriptor@0.1.6 want: ^0.1.4
+431 silly placeDep node_modules/sloc/node_modules/expand-brackets kind-of@5.1.0 OK for: is-descriptor@0.1.6 want: ^5.0.0
+432 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/is-descriptor Completed in 3ms
+433 silly placeDep node_modules/sloc/node_modules/expand-brackets/node_modules/is-accessor-descriptor kind-of@3.2.2 OK for: is-accessor-descriptor@0.1.6 want: ^3.0.2
+434 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/is-accessor-descriptor Completed in 1ms
+435 silly placeDep node_modules/sloc/node_modules/expand-brackets/node_modules/is-data-descriptor kind-of@3.2.2 OK for: is-data-descriptor@0.1.4 want: ^3.0.2
+436 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/is-data-descriptor Completed in 1ms
+437 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/is-extendable Completed in 0ms
+438 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/kind-of Completed in 0ms
+439 timing idealTree:node_modules/sloc/node_modules/extglob/node_modules/define-property Completed in 0ms
+440 silly placeDep node_modules/sloc/node_modules/extglob is-extendable@0.1.1 OK for: extend-shallow@2.0.1 want: ^0.1.0
+441 timing idealTree:node_modules/sloc/node_modules/extglob/node_modules/extend-shallow Completed in 1ms
+442 timing idealTree:node_modules/sloc/node_modules/extglob/node_modules/is-extendable Completed in 0ms
+443 silly placeDep node_modules/sloc/node_modules/fill-range is-extendable@0.1.1 OK for: extend-shallow@2.0.1 want: ^0.1.0
+444 timing idealTree:node_modules/sloc/node_modules/fill-range/node_modules/extend-shallow Completed in 1ms
+445 timing idealTree:node_modules/sloc/node_modules/fill-range/node_modules/is-extendable Completed in 0ms
+446 silly placeDep node_modules/sloc is-buffer@1.1.6 OK for: kind-of@4.0.0 want: ^1.1.5
+447 timing idealTree:node_modules/sloc/node_modules/has-values/node_modules/kind-of Completed in 2ms
+448 timing idealTree:node_modules/sloc/node_modules/is-buffer Completed in 0ms
+449 timing idealTree:node_modules/sloc/node_modules/is-number/node_modules/kind-of Completed in 0ms
+450 silly placeDep node_modules/sloc/node_modules/object-copy is-descriptor@0.1.6 OK for: define-property@0.2.5 want: ^0.1.0
+451 timing idealTree:node_modules/sloc/node_modules/object-copy/node_modules/define-property Completed in 1ms
+452 silly placeDep node_modules/sloc/node_modules/object-copy is-accessor-descriptor@0.1.6 OK for: is-descriptor@0.1.6 want: ^0.1.6
+453 silly placeDep node_modules/sloc/node_modules/object-copy is-data-descriptor@0.1.4 OK for: is-descriptor@0.1.6 want: ^0.1.4
+454 silly placeDep node_modules/sloc/node_modules/object-copy/node_modules/is-descriptor kind-of@5.1.0 OK for: is-descriptor@0.1.6 want: ^5.0.0
+455 timing idealTree:node_modules/sloc/node_modules/object-copy/node_modules/is-descriptor Completed in 3ms
+456 timing idealTree:node_modules/sloc/node_modules/object-copy/node_modules/is-accessor-descriptor Completed in 0ms
+457 timing idealTree:node_modules/sloc/node_modules/object-copy/node_modules/is-data-descriptor Completed in 0ms
+458 timing idealTree:node_modules/sloc/node_modules/object-copy/node_modules/kind-of Completed in 0ms
+459 timing idealTree:node_modules/sloc/node_modules/set-value/node_modules/extend-shallow Completed in 0ms
+460 timing idealTree:node_modules/sloc/node_modules/set-value/node_modules/is-extendable Completed in 0ms
+461 timing idealTree:node_modules/sloc/node_modules/snapdragon-node/node_modules/define-property Completed in 0ms
+462 timing idealTree:node_modules/sloc/node_modules/snapdragon-util/node_modules/kind-of Completed in 0ms
+463 silly placeDep node_modules/sloc/node_modules/snapdragon is-descriptor@0.1.6 OK for: define-property@0.2.5 want: ^0.1.0
+464 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/define-property Completed in 1ms
+465 silly placeDep node_modules/sloc/node_modules/snapdragon is-extendable@0.1.1 OK for: extend-shallow@2.0.1 want: ^0.1.0
+466 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/extend-shallow Completed in 1ms
+467 silly placeDep node_modules/sloc/node_modules/snapdragon is-accessor-descriptor@0.1.6 OK for: is-descriptor@0.1.6 want: ^0.1.6
+468 silly placeDep node_modules/sloc/node_modules/snapdragon is-data-descriptor@0.1.4 OK for: is-descriptor@0.1.6 want: ^0.1.4
+469 silly placeDep node_modules/sloc/node_modules/snapdragon kind-of@5.1.0 OK for: is-descriptor@0.1.6 want: ^5.0.0
+470 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/is-descriptor Completed in 5ms
+471 silly placeDep node_modules/sloc/node_modules/snapdragon/node_modules/is-accessor-descriptor kind-of@3.2.2 OK for: is-accessor-descriptor@0.1.6 want: ^3.0.2
+472 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/is-accessor-descriptor Completed in 2ms
+473 silly placeDep node_modules/sloc/node_modules/snapdragon/node_modules/is-data-descriptor kind-of@3.2.2 OK for: is-data-descriptor@0.1.4 want: ^3.0.2
+474 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/is-data-descriptor Completed in 1ms
+475 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/is-extendable Completed in 0ms
+476 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/kind-of Completed in 0ms
+477 silly placeDep node_modules/sloc/node_modules/static-extend is-descriptor@0.1.6 OK for: define-property@0.2.5 want: ^0.1.0
+478 timing idealTree:node_modules/sloc/node_modules/static-extend/node_modules/define-property Completed in 1ms
+479 silly placeDep node_modules/sloc/node_modules/static-extend is-accessor-descriptor@0.1.6 OK for: is-descriptor@0.1.6 want: ^0.1.6
+480 silly placeDep node_modules/sloc/node_modules/static-extend is-data-descriptor@0.1.4 OK for: is-descriptor@0.1.6 want: ^0.1.4
+481 silly placeDep node_modules/sloc/node_modules/static-extend kind-of@5.1.0 OK for: is-descriptor@0.1.6 want: ^5.0.0
+482 timing idealTree:node_modules/sloc/node_modules/static-extend/node_modules/is-descriptor Completed in 4ms
+483 silly placeDep node_modules/sloc/node_modules/static-extend/node_modules/is-accessor-descriptor kind-of@3.2.2 OK for: is-accessor-descriptor@0.1.6 want: ^3.0.2
+484 timing idealTree:node_modules/sloc/node_modules/static-extend/node_modules/is-accessor-descriptor Completed in 1ms
+485 silly placeDep node_modules/sloc/node_modules/static-extend/node_modules/is-data-descriptor kind-of@3.2.2 OK for: is-data-descriptor@0.1.4 want: ^3.0.2
+486 timing idealTree:node_modules/sloc/node_modules/static-extend/node_modules/is-data-descriptor Completed in 1ms
+487 timing idealTree:node_modules/sloc/node_modules/static-extend/node_modules/kind-of Completed in 0ms
+488 timing idealTree:node_modules/sloc/node_modules/to-object-path/node_modules/kind-of Completed in 0ms
+489 timing idealTree:node_modules/sloc/node_modules/union-value/node_modules/is-extendable Completed in 0ms
+490 silly placeDep node_modules/sloc/node_modules/unset-value has-values@0.1.4 OK for: has-value@0.3.1 want: ^0.1.4
+491 silly placeDep node_modules/sloc/node_modules/unset-value/node_modules/has-value isobject@2.1.0 OK for: has-value@0.3.1 want: ^2.0.0
+492 timing idealTree:node_modules/sloc/node_modules/unset-value/node_modules/has-value Completed in 2ms
+493 timing idealTree:node_modules/sloc/node_modules/unset-value/node_modules/has-values Completed in 0ms
+494 timing idealTree:node_modules/sloc/node_modules/class-utils/node_modules/is-accessor-descriptor/node_modules/kind-of Completed in 0ms
+495 timing idealTree:node_modules/sloc/node_modules/class-utils/node_modules/is-data-descriptor/node_modules/kind-of Completed in 0ms
+496 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/is-accessor-descriptor/node_modules/kind-of Completed in 0ms
+497 timing idealTree:node_modules/sloc/node_modules/expand-brackets/node_modules/is-data-descriptor/node_modules/kind-of Completed in 0ms
+498 timing idealTree:node_modules/sloc/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of Completed in 0ms
+499 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/is-accessor-descriptor/node_modules/kind-of Completed in 0ms
+500 timing idealTree:node_modules/sloc/node_modules/snapdragon/node_modules/is-data-descriptor/node_modules/kind-of Completed in 0ms
+501 timing idealTree:node_modules/sloc/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of Completed in 0ms
+502 timing idealTree:node_modules/sloc/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of Completed in 0ms
+503 timing idealTree:node_modules/sloc/node_modules/unset-value/node_modules/has-value/node_modules/isobject Completed in 0ms
+504 timing idealTree:buildDeps Completed in 2667ms
+505 timing idealTree:fixDepFlags Completed in 2ms
+506 timing idealTree Completed in 2679ms
+507 timing reify:loadTrees Completed in 2682ms
+508 timing reify:diffTrees Completed in 5ms
+509 silly reify moves {}
+510 timing reify:retireShallow Completed in 1ms
+511 timing reify:rollback:createSparse Completed in 0ms
+512 timing reify:rollback:retireShallow Completed in 0ms
+513 timing command:install Completed in 2775ms
+514 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+515 verbose cwd /home/sweetsk8er/hexlet-hello-world
+516 verbose Linux 5.10.16.3-microsoft-standard-WSL2
+517 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "sloc"
+518 verbose node v12.22.9
+519 verbose npm  v8.5.1
+520 error code EACCES
+521 error syscall mkdir
+522 error path /usr/local/lib/node_modules
+523 error errno -13
+524 error [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'] {
+524 error   errno: -13,
+524 error   code: 'EACCES',
+524 error   syscall: 'mkdir',
+524 error   path: '/usr/local/lib/node_modules'
+524 error }
+525 error
+525 error The operation was rejected by your operating system.
+525 error It is likely you do not have the permissions to access this file as the current user
+525 error
+525 error If you believe this might be a permissions issue, please double-check the
+525 error permissions of the file and its containing directories, or try running
+525 error the command again as root/Administrator.
+526 verbose exit -13
+527 timing npm Completed in 2955ms
+528 verbose unfinished npm timer reify 1670584290988
+529 verbose unfinished npm timer reify:createSparse 1670584293692
+530 verbose code -13
+531 error A complete log of this run can be found in:
+531 error     /home/sweetsk8er/.npm/_logs/2022-12-09T11_11_30_813Z-debug-0.log
