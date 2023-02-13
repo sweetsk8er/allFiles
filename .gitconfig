@@ -1,3 +1,5 @@
 [user]
 	email = cranefront@yandex.ru
 	name = sweetsk8er
+[core]
+	autocrlf = false
